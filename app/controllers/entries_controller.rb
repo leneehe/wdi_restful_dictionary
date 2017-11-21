@@ -1,7 +1,8 @@
 class EntriesController < ApplicationController
 
   def index
-    render :index
+    # here we'll define some @instance_variables to store data from the database for the views to use
+    # render :index
   end
 
   def show
@@ -9,7 +10,7 @@ class EntriesController < ApplicationController
   end
 
   def new
-    render :new
+    # render :new
   end
 
   def create
@@ -17,7 +18,7 @@ class EntriesController < ApplicationController
   end
 
   def edit
-    render :edit
+    # render :edit
   end
 
   def update
