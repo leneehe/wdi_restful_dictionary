@@ -1,0 +1,17 @@
+<%= form_for entry do |form| %>
+  <p>
+    <%= form.label :word %>
+    <%= form.text_field :word %>
+  </p>
+  <p>
+    <%= form.label :definition %>
+    <%= form.text_area :definition %>
+  </p>
+  <p>
+    <%= form.label :language %>
+    <%= form.text_field :language%>
+  </p>
+  <p>
+    <%= form.button %>
+  </p>
+<% end %>

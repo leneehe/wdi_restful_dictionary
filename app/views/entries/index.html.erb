@@ -1,1 +1,9 @@
-<p>This is the entries index page</p>
+<h1>Dictionary entries index</h1>
+<h3>
+<%= link_to 'Add Entry', new_entry_path %>
+</h3>
+<ul>
+  <% @entries.each do |entry| %>
+    <li><%= link_to entry.word, entry_path(entry.id) %></li>
+  <% end %>
+</ul>
